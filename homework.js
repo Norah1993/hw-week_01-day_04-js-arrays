@@ -27,4 +27,22 @@ const avg = function (nums){
       return avg;
      }
 
+     //Create a function to reverse the letters in a word 
+r//everse("caterpillar") //// should return "rallipretac"//
+     const reverse = function (word){
+        var reversed = "";
+        for(var i = word.length-1; i>=0; i--){
+          eversed += word[i]; }
+          return reversed;
+    }
+
+    //Create a function that takes an array of words and combines them with a dash 
+//addDashes(['test1', 'test2', 'test3'])// // should return "test1-test2-test3"//
+function addDashes(words){
+    let dashed = "";
+     for(let i=0; i < words.length; i++){
+         dashed += words[i] + "-"; }
+       return dashed.slice(0, dashed.length-1);
+    }
+    
 
